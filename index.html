@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!--links-->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">service</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <!--home-->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm <br><span>Nutchanokchon Pooyatorn</span></h2>
+           <!-- <h3>i'm a front end developer.</h3>-->
+            <a href="#about" class="btn">About me</a>
+        </div>
+    </section>
+
+    <!--about me-->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Bachelor degree in computer science </h3>
+                <p>i graduated from Sirindhorn International Institute of Technology (SIIT) 2019, 
+                    in a major of Management Technology<br>
+
+                    <br>i am passionate about creating a piece of art using technology, the main reason is that
+                    it satisfied my need for creativity, it enabled me to easily put my ideas
+                    into digital form and get result back really quick.
+                </p>
+            </div>
+
+            <div class="w50">
+                <img src="./images/img1.jpg" class="img" />
+            </div>
+        </div>
+    </section>  
+    <!--our service-->
+        <section class="services" id="services">
+            <div class="heading white">
+                <h2>My skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>      
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="./images/icon1.png" >
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./images/icon2.png" >
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./images/icon3.png" >
+                    <h2>android App</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./images/icon4.png" >
+                    <h2>Photogrqaphy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./images/icon5.png" >
+                    <h2>content writing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./images/icon6.png" >
+                    <h2>Video Editing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt u</p>
+                </div>
+            </div>
+         </section>    
+
+    <!--work-->
+         <section class="work" id="work">
+            <div class="heading ">
+                <h2>My Latest project</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>      
+            </div>
+            <div class="content">
+                <div class="workBx">
+                    <a href="https://donut5896.github.io/MadamGrace/"><img src="./images/product1.jpg" ></a>
+                </div>
+                <div class="workBx">
+                    <a href="https://donut5896.github.io/Capstone/"><img src="./images/product2.jpg" ></a>
+                </div>
+                <div class="workBx">
+                    <a href="https://donut5896.github.io/Menu/"><img src="./images/product3.jpg" ></a>
+                </div>
+                <div class="workBx">
+                    <img src="./images/product4.jpg" >
+                </div>
+            </div>
+            
+            <div class="heading ">
+                <a href="https://github.com/Donut5896" class="btn">View More</a>
+            </div>
+           
+         </section>
+    <!--testimonial-->
+         <section class="testimonial" id="testimonial">
+            <div class="heading ">
+                <h2>testimonial</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>      
+            </div>
+            <div class="content">
+                <div class="testiminialBx">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                          ut aliquip ex ea commodo consequat.
+                    </p>
+                    <h3>Codecademy<br><span>javascript course</span></h3>
+                </div>
+                <div class="testiminialBx">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                          ut aliquip ex ea commodo consequat.
+                    </p>
+                    <h3>sololearn<br><span>javascript course</span></h3>
+                </div>
+            </div>
+         </section>
+
+    <!--contact-->
+         <section class="contact" id="contact">
+            <div class="heading white">
+                <h2>contact me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>      
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="text">
+                              <h3>Address</h3>
+                              <p>Songprapa road,<br> Donmueang, Bangkok,<br> 10210 </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="text">
+                              <h3>Phone</h3>
+                              <p>062-469-3434</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="text">
+                              <h3>Email</h3>
+                              <p>Nutchanokchon5@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-github"></i>
+                            </div>
+                            <div class="text">
+                              <h3>github</h3>
+                              <p>https://github.com/Donut5896</p>
+                            </div>
+                        </div>    
+                        
+                    </div>
+                </div>
+
+                <div class="formbx">
+                    <form >
+                        <h3>Message Me</h3>
+                        <input type="text" name="" placeholder="Full Name">
+                        <input type="email" name="" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+    <!--copy right-->      
+        <div class="copyright">
+            <p>copyright @ 2020. All Right Reserved</p>
+        </div>        
+                    
+                
+          
+        
+
+    <!--fixed navbar-->
+    <script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        let header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        let menuToggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active')
+        menu.classList.toggle('active')
+    }
+    </script>
+  
+
+</body>
+</html>
