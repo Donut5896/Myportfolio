@@ -182,6 +182,9 @@ img{
     max-width: 80px;
     filter: invert(1);
 }
+.services .content .servicesBx i{
+
+}
 
 .services .content .servicesBx h2{
     font-size: 20px;
@@ -210,8 +213,8 @@ img{
 }
 .testimonial .content{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+   
 }
 
 .testimonial .content .testiminialBx{
@@ -417,11 +420,15 @@ img{
     }
     /* testimonial */
     .testimonial .content .testiminialBx{
-        max-width: calc(100% - 20px);
+        max-width: calc(100% - 70px);
         padding: 40px 20px;
         margin: 10px;
         background: #2196f3;
     }
+    .testimonial .content .testiminialBx img{
+        justify-content: center;
+    }
+
     .testimonial .content .testiminialBx h3{
         margin-top: 20px;
     }
