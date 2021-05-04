@@ -9,6 +9,10 @@
      scroll-behavior: smooth;
 }
 
+a{
+    list-style: none;
+    text-decoration: none;
+}
 
 /*  banner */
 section {
@@ -190,20 +194,85 @@ img{
 
 /* work */
 
-.work .content{
+.work .content-cards{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.work .content .workBx{
-    width: 50%;
-    padding: 20px;
-}
-.work .content .workBx img{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
-    height: auto;
-    width: 90%;
 }
+ .content-cards .workBx{
+    max-width: 100%;
+    width: 90%;
+    display: flex;
+    box-shadow: 0 70px 140px 0 rgb(130 136 171 / 2);
+    border-radius:  15px  15px ;
+    background-color: #fff;
+    margin: 2rem;
+}
+ .workBx .images-left{
+    height: 280px;
+    width: 50%;
+}
+.workBx .images-right{
+    height: 280px;
+    width: 50%;
+}
+.workBx .images-left img{
+    width: auto;
+    background-size: cover;
+    border-radius: 15px 0 0 15px ;
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+}
+.workBx .images-right img{
+    width: auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+    background-size: cover;
+    height: 326px;
+}
+.workBx .details{
+    height: 328px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 15px  15px 0 ;
+   
+}
+.details p.title{
+     padding: 20px;
+     margin: 1rem;
+     font-size: 40px;
+    letter-spacing: 1.25px;
+}
+p.des{
+    padding: 20px;
+    font-size: 22px;
+   letter-spacing: 1.25px;
+}
+.details .view-project{
+    background-image: linear-gradient(135deg
+    ,#72e9f3 -20%,#404de6 120%);
+    box-shadow: 0 11px 36px 0 rgb(70 89 138 / 25%);
+    cursor: pointer;
+    max-width: 100%;
+    height: 50px;
+    padding: 16px 32px;
+    font-weight: 700px;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 9rem;
+}
+
+
+
 
 /* testimonial */
 
@@ -330,7 +399,18 @@ img{
     padding: 10px;
 }
 
-/*--------Rsponsive-----------*/
+
+
+
+
+
+
+
+
+
+
+
+/*--------Responsive-----------*/
 @media (max-width: 991px){
     header,
     header.sticky {
@@ -404,6 +484,7 @@ img{
     }
     .content{
         flex-direction: column;
+        align-items: center;
     }
     .w50{
         margin-bottom: 20px;
@@ -412,18 +493,43 @@ img{
     .services .content .servicesBx{
         margin: 10px;
     }
-    /* work */
-    .work .content .workBx{
+
+    /*skills */
+    /*.work .content .workBx{
         width: 100%;
         padding: 10px;
     }
-    /* testimonial */
+   */
+   .content-cards .workBx{
+   max-width: fit-content;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   }
+   .workBx .images-left {
+    width: 100%;
+    }
+    .workBx .images-left img {
+        border-radius: 15px 15px 0 0;
+    }
+    .workBx .details {
+        width: 100%;
+    }
+    .workBx .images-right {
+        width: 100%;
+    }
+    .workBx .images-right img {
+        border-radius: 0 0 15px 15px;
+    }
+    /* certificate */
+
     .testimonial .content .testiminialBx{
-        max-width: calc(100% - 70px);
+        max-width: calc(100% - 300px);
         padding: 40px 20px;
         margin: 10px;
         background: #2196f3;
     }
+
     .testimonial .content .testiminialBx img{
         justify-content: center;
     }
@@ -431,6 +537,7 @@ img{
     .testimonial .content .testiminialBx h3{
         margin-top: 20px;
     }
+
     /* contact */
     .contactInfo {
         margin: 20px 0;
