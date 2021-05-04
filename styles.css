@@ -60,7 +60,6 @@ section {
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
-
 }
 
 /* nav bar */
@@ -155,6 +154,10 @@ img{
 
 .services{
     background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading.white{
@@ -165,14 +168,15 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;    
+    flex-direction: row; 
+    width: 60%;   
 }
 
 .services .content .servicesBx{
     padding: 40px 20px;
     background: #222;
     color: #fff;
-    max-width: 340px;
+    width: 340px;
     margin: 20px;
     text-align: center;
     transition: 0.5s;
@@ -200,6 +204,7 @@ img{
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    margin-bottom: 5rem;
 }
  .content-cards .workBx{
     max-width: 100%;
@@ -224,7 +229,7 @@ img{
     border-radius: 15px 0 0 15px ;
     position: relative;
     overflow: hidden;
-    min-height: 280px;
+    min-height: 325px;
 }
 .workBx .images-right img{
     width: auto;
