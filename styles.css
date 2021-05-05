@@ -127,8 +127,18 @@ header.sticky .logo{
 .heading h2{
     font-weight: 600;
     font-size: 30px;
+   
 }
-
+.heading::before{
+    width: 40px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: -21%;
+    left: 50%;
+    background-color: #383435;
+    transform: translateX(-50%);
+}
 .content{
     display: flex;
     justify-content: space-between;
@@ -160,16 +170,27 @@ img{
     align-items: center;
 }
 
-.heading.white{
+.heading-white.white{
     color: #fff;
+    position: relative;
+    margin: 3rem;
 }
+.heading-white::before{
+    width: 40px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 30%;
+    background-color: #fff;
 
+}
 .services .content{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row; 
-    width: 90%;   
+    width: 80%;   
 }
 
 .services .content .servicesBx{
@@ -197,7 +218,25 @@ img{
 }
 
 /* work */
-
+.heading-project{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 1rem;
+}
+.heading-project h3{
+    position: relative;
+}
+.heading-project::before{
+    width: 40px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    bottom: -52%;
+    left: 50%;
+    background-color: #070b31;
+    transform: translateX(-50%);
+}
 .work .content-cards{
     display: flex;
     flex-direction: column;
