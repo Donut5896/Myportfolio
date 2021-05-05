@@ -208,7 +208,7 @@ img{
 }
  .content-cards .workBx{
     max-width: 100%;
-    width: 90%;
+    width: 70%;
     display: flex;
     box-shadow: 0 70px 140px 0 rgb(130 136 171 / 2);
     border-radius:  15px  15px ;
@@ -229,7 +229,8 @@ img{
     border-radius: 15px 0 0 15px ;
     position: relative;
     overflow: hidden;
-    min-height: 325px;
+    min-height: 300px;
+    height: 328px;
 }
 .workBx .images-right img{
     width: auto;
@@ -238,7 +239,7 @@ img{
     overflow: hidden;
     border-radius: 0 15px 15px 0;
     background-size: cover;
-    height: 326px;
+    height: 328px;
 }
 .workBx .details{
     height: 328px;
@@ -251,7 +252,7 @@ img{
 }
 .details p.title{
      padding: 20px;
-     margin: 1rem;
+     margin-top: 2rem;
      font-size: 40px;
     letter-spacing: 1.25px;
 }
@@ -405,7 +406,10 @@ p.des{
 }
 
 
-
+.wave{
+    position: relative;
+    bottom: 0;
+}
 
 
 
@@ -416,7 +420,7 @@ p.des{
 
 
 /*--------Responsive-----------*/
-@media (max-width: 991px){
+@media (max-width: 800px){
     header,
     header.sticky {
     padding: 20px 50px;
@@ -561,4 +565,5 @@ p.des{
     section{
         padding: 100px 20px;
     }
+
 }
