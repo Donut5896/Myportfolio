@@ -168,12 +168,14 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-bottom: 12rem;
 }
 
 .heading-white.white{
     color: #fff;
     position: relative;
-    margin: 3rem;
+    margin-bottom: 8rem
 }
 .heading-white::before{
     width: 40px;
@@ -185,38 +187,55 @@ img{
     background-color: #fff;
 
 }
-.services .content{
-    display: flex;
+ .content-Box{
+    flex-direction: row;
+    margin: 20px auto 0;
+    position: relative;
+    max-width: 940px;
+    display: flex; 
+    width: 100%;
+    height: 380px;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row; 
-    width: 80%;   
 }
 
-.services .content .servicesBx{
-    padding: 40px 20px;
-    background: #222;
+ .servicesBx{
     color: #fff;
-    width: 340px;
-    margin: 20px;
-    text-align: center;
     transition: 0.5s;
+    display: flex;
+    flex: 0 0 calc((100% - 40px) / 3);
+    width: calc((100% - 10px) / 3);
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem 1rem;
 }
 
-.services .content .servicesBx:hover{
-    background: #2196f3;
-}
 
-.services .content .servicesBx img{
-    max-width: 80px;
-    filter: grayscale(50%);
-}
 
-.services .content .servicesBx h2{
+.serviceItems h2{
     font-size: 20px;
     font-weight: 600;
 }
-
+.serviceItems{
+    width: 100%;
+    height: 160px;
+    flex: 0 0 100%;
+    border-radius: 16px;
+    box-shadow: 0 30px 40px 0 rgb(212 217 232 / 10%);
+    background-color: #222;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.serviceItems:hover{
+    background: #2196f3;
+}
+ .serviceItems img{
+    max-width: 80px;
+    filter: grayscale(50%);
+}
 /* work */
 .heading-project{
     display: flex;
