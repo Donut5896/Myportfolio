@@ -141,7 +141,7 @@ header.sticky .logo{
     height: 2px;
     content: "";
     position: absolute;
-    bottom: -20%;
+    bottom: -24%;
     left: 50%;
     background-color: #383435;
     transform: translateX(-50%);
@@ -303,6 +303,7 @@ img{
  .content-cards .workBx{
     max-width: 100%;
     width: 70%;
+    height: 300px;
     display: flex;
     box-shadow: 0 70px 140px 0 rgb(130 136 171 / 2);
     border-radius:  15px  15px ;
@@ -324,7 +325,7 @@ img{
     position: relative;
     overflow: hidden;
     min-height: 300px;
-    height: 328px;
+    height: 300px;
 }
 .workBx .images-right img{
     width: 100%;
@@ -333,7 +334,7 @@ img{
     overflow: hidden;
     border-radius: 0 15px 15px 0;
     background-size: cover;
-    height: 328px;
+    height: 300px;
 }
 .workBx .details{
     height: 328px;
@@ -362,14 +363,14 @@ p.des{
     box-shadow: 0 11px 36px 0 rgb(70 89 138 / 25%);
     cursor: pointer;
     max-width: 100%;
+    width: 60%;
     height: 50px;
-    padding: 16px 32px;
     font-weight: 700px;
     border-radius: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 9rem;
+    margin: 1rem 5.5rem;
 }
 
 
@@ -378,7 +379,7 @@ p.des{
 /* testimonial */
 
 .testimonial{
-    background: #f7f7f7;
+    background: rgb(255 255 255);
 }
 .testimonial .content{
     display: flex;
@@ -414,10 +415,14 @@ p.des{
 
 /* contact */
 .contact{
-    background: #111;
+    position: relative;
+    height: 900px;
+    padding: 192px 0 0;
+    background-image: linear-gradient(to bottom right,#bab9bb,#2e2b31);
 }
 .contactInfo{
     min-width: 40%;   
+    padding-left: 5rem;
 }
 .contactInfoBx{
     position: relative;
@@ -458,7 +463,7 @@ p.des{
     display: flex;
     Flex-direction: column;
 }
-.formbx form h3,
+.formbx form h3, 
 .contactInfo h3{
     color: #fff;
     font-size: 20px;
@@ -468,7 +473,7 @@ p.des{
 .formbx form input,
 .formbx form textarea{
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     outline: none;
@@ -495,22 +500,68 @@ p.des{
 /* copyright */
 .copyright{
     background: #000;
-    color: #fff;
-    text-align: center;
+    color: #dad1d1;
+    text-align: end;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-
-.wave{
-    position: relative;
+/* wave effect */
+.footer-bg{
+    position: absolute;
+    z-index: 0;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1920px;
+}
+.footer-bg .footer-pattern-bg img {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.footer-bg .footer-pattern-bg .footer-pattern-bg__large {
+    display: none;
 }
 
 
+@media (min-width: 768px){
+.footer-white-mask {
+    top: -14px;
+    width: 1340px;
+}
 
+}
 
+.footer-white-mask {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    transform: translateX(-50%);
+}
 
+.footer-white-mask img {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    text-align: left;
+}
 
+.footer-white-mask .footer-white-mask__large {
+    display: none;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+}
 
 
 
@@ -599,17 +650,13 @@ p.des{
         height: 200px;
     }
 
-    /*skills */
-    /*.work .content .workBx{
-        width: 100%;
-        padding: 10px;
-    }
-   */
+  
    .content-cards .workBx{
-   max-width: fit-content;
-   width: 90%;
-   display: flex;
-   flex-direction: column;
+        max-width: fit-content;
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
    }
    .workBx .images-left {
     width: 100%;
@@ -625,6 +672,12 @@ p.des{
     }
     .workBx .images-right img {
         border-radius: 0 0 15px 15px;
+    }
+    .workBx.ubereats{
+        display: none;
+    }
+    .workBx.candy{
+        display: none;
     }
     /* certificate */
 
@@ -648,6 +701,65 @@ p.des{
         margin: 20px 0;
     }
 
+    .contact{
+        height: 1334px;
+        padding: 192px 0 0;
+      
+        }
+    .details .view-project{
+            width: 70%;
+        }
+
+        /* skills */
+        .content-Box{
+            flex-direction: column;
+            max-width: 400px;
+            margin: 50px auto ;
+        }
+        .servicesBx{
+            flex: 0 0 100%;
+            width: 100%;   
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .servicesBx+.servicesBx{
+            margin: 20px 0 0;
+        }
+        .serviceItems+.serviceItems {
+            margin: 25px 0 0;
+        }
+        .serviceItems.vscode,
+        .serviceItems.lang{
+            width: 320px;
+            height: 100px;
+            flex: 0 0 320px;
+            flex: 0 0 320px;
+            border-radius: 13px;
+        }
+        .serviceItems.center{
+            display: none;
+        }
+        .serviceItems.git,
+        .serviceItems.js{
+            width: 260px;
+            height: 80px;
+            -ms-flex: 0 0 260px;
+            flex: 0 0 260px;
+            border-radius: 11px;
+        }
+        .serviceItems.devtools,
+        .serviceItems.html{
+             width: 180px;
+             height: 80px;
+            -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
+            border-radius: 9px;
+        }
+        .serviceItems img {
+            max-width: 30px;
+        }
+      
 }
 
 @media (max-width: 600px){
@@ -661,5 +773,8 @@ p.des{
     section{
         padding: 100px 20px;
     }
-
+ 
 }
+
+
+
