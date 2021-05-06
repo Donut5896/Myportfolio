@@ -456,6 +456,11 @@ p.des{
 }
 
 /* form */
+.content {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5rem 1rem;
+}
 .formbx{
     min-width: 50%;
 }
