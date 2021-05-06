@@ -283,7 +283,7 @@ img{
     width: 50%;
 }
 .workBx .images-left img{
-    width: auto;
+    width: 100%;
     background-size: cover;
     border-radius: 15px 0 0 15px ;
     position: relative;
