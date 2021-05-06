@@ -571,7 +571,7 @@ p.des{
 
 
 /*--------Responsive-----------*/
-@media (max-width: 900px){
+@media  (max-width: 1024px){
     header,
     header.sticky {
     padding: 20px 50px;
