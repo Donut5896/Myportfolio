@@ -127,6 +127,7 @@ header.sticky .logo{
 .heading h2{
     font-weight: 600;
     font-size: 30px;
+    margin: 1rem;
    
 }
 .heading::before{
@@ -134,7 +135,7 @@ header.sticky .logo{
     height: 2px;
     content: "";
     position: absolute;
-    bottom: -21%;
+    bottom: -25%;
     left: 50%;
     background-color: #383435;
     transform: translateX(-50%);
@@ -233,7 +234,7 @@ img{
     background: #2196f3;
 }
  .serviceItems img{
-    max-width: 80px;
+    max-width: 50px;
     filter: grayscale(50%);
 }
 /* work */
@@ -291,7 +292,7 @@ img{
     height: 328px;
 }
 .workBx .images-right img{
-    width: auto;
+    width: 100%;
     background-size: cover;
     position: relative;
     overflow: hidden;
