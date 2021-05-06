@@ -141,7 +141,7 @@ header.sticky .logo{
     height: 2px;
     content: "";
     position: absolute;
-    bottom: -25%;
+    bottom: -20%;
     left: 50%;
     background-color: #383435;
     transform: translateX(-50%);
