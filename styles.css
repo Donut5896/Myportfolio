@@ -127,9 +127,13 @@ header.sticky .logo{
     color: #111;
 }
 .heading h2{
-    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
     font-size: 30px;
-    margin: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
    
 }
 .heading::before{
@@ -190,6 +194,7 @@ img{
     font-weight: 500;
     margin: 1rem;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
 }
 
 
@@ -200,7 +205,7 @@ img{
     content: "";
     position: absolute;
     bottom: -30%;
-    left: 40%;
+    left: 45%;
     background-color: #fff;
 
 }
@@ -253,7 +258,13 @@ img{
     max-width: 50px;
     filter: grayscale(50%);
 }
+
+
+
+
 /* work */
+
+
 .heading-project{
     display: flex;
     justify-content: center;
@@ -262,13 +273,21 @@ img{
 }
 .heading-project h3{
     position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
 }
 .heading-project::before{
     width: 40px;
     height: 3px;
     content: "";
     position: absolute;
-    bottom: -52%;
+    bottom: -30%;
     left: 50%;
     background-color: #070b31;
     transform: translateX(-50%);
