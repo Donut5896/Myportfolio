@@ -457,7 +457,7 @@ p.des{
 
 /* form */
 .formbx{
-    min-width: 60%;
+    min-width: 50%;
 }
 .formbx form{
     display: flex;
@@ -515,7 +515,7 @@ p.des{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 1920px;
+    width: 2020px;
 }
 .footer-bg .footer-pattern-bg img {
     display: block;
@@ -542,7 +542,7 @@ p.des{
     z-index: 1;
     top: 0;
     left: 50%;
-    width: 1920px;
+    width: 2022px;
     transform: translateX(-50%);
 }
 
