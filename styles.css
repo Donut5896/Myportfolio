@@ -685,7 +685,12 @@ p.des{
         display: none;
     }
     /* certificate */
-
+img{
+    object-fit: cover;
+}
+a{
+    color: #fff;
+}
     .testimonial .content .testiminialBx{
         max-width: calc(100% - 300px);
         padding: 40px 20px;
